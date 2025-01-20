@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+  .navbar-nav .nav-item {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .hero-video iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+

@@ -1,0 +1,188 @@
+<%- include("partials/header.ejs") %>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <header class="site-header text-center py-5">
+        <h1 class="site-title">Thought Heaven</h1>
+        <p class="site-subtitle">Lifestyle Blog</p>
+    </header>
+
+    <section id="about" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>About Us</h2>
+            <p class="lead">
+                Thought Heaven is a platform designed to bring out the best stories and ideas from people all over the
+                world.
+                Whether you're looking for inspiration or want to share your journey, this is the place for you.
+            </p>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Snapshots of My Life</h2>
+            <div class="row">
+                <!-- Gallery Items -->
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA=="
+                            alt="Working on new blog content in my home office" class="gallery-image img-fluid">
+                        <div class="gallery-overlay">
+                            <p class="gallery-description">Working on new blog content in my home office</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional Gallery Items -->
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA=="
+                            alt="Working on new blog content in my home office" class="gallery-image img-fluid">
+                        <div class="gallery-overlay">
+                            <p class="gallery-description">Working on new blog content in my home office</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA=="
+                            alt="Working on new blog content in my home office" class="gallery-image img-fluid">
+                        <div class="gallery-overlay">
+                            <p class="gallery-description">Working on new blog content in my home office</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA=="
+                            alt="Working on new blog content in my home office" class="gallery-image img-fluid">
+                        <div class="gallery-overlay">
+                            <p class="gallery-description">Working on new blog content in my home office</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA=="
+                            alt="Working on new blog content in my home office" class="gallery-image img-fluid">
+                        <div class="gallery-overlay">
+                            <p class="gallery-description">Working on new blog content in my home office</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA=="
+                            alt="Working on new blog content in my home office" class="gallery-image img-fluid">
+                        <div class="gallery-overlay">
+                            <p class="gallery-description">Working on new blog content in my home office</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Import Poppins Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+        /* General */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Header Section */
+        .site-header {
+            background: linear-gradient(135deg, #4e54c8, #8f94fb);
+            color: white;
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        /* Header Title */
+        .site-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Header Subtitle */
+        .site-subtitle {
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin-top: 0;
+        }
+
+        /* About Section */
+        #about {
+            padding: 5rem 0;
+            background-color: #f8f9fa;
+        }
+
+        #about h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #4e54c8;
+        }
+
+        #about p {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        /* Gallery Section */
+        #gallery {
+            padding: 5rem 0;
+        }
+
+        #gallery h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #4e54c8;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-image {
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-description {
+            font-size: 1rem;
+            padding: 0 10px;
+        }
+    </style>
+    <%- include("partials/footer.ejs") %>

@@ -1,0 +1,192 @@
+<%- include("partials/header.ejs") %>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <header class="site-header text-center py-5">
+    <h1 class="site-title">Thought Heaven</h1>
+    <p class="site-subtitle">Lifestyle Blog</p>
+  </header>
+
+  <main class="main-content">
+    <div class="content-container">
+      <div class="create-post-container">
+        <h1>Create New Blog Post</h1>
+
+        <form action="/blog/submit" method="post" class="create-form">
+          <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required placeholder="Enter post title">
+          </div>
+
+          <div class="form-group">
+            <label for="body">Body:</label>
+            <textarea id="body" name="body" required placeholder="Write your post content here..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required value="2025-01-05">
+          </div>
+
+          <div class="form-group">
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" placeholder="Enter author name">
+          </div>
+
+          <div class="form-group">
+            <label for="tags">Tags:</label>
+            <input type="text" id="tags" name="tags" required placeholder="e.g., foodie, travel, lifestyle">
+            <small>Separate tags with commas</small>
+          </div>
+
+          <div class="form-group">
+            <label for="comments">Comments (optional):</label>
+            <textarea id="comments" name="comments"
+              placeholder="Format: username: comment, username2: comment2"></textarea>
+            <small>Leave empty if no initial comments</small>
+          </div>
+
+          <div class="form-group">
+            <label for="htmlContent">HTML Content:</label>
+            <textarea id="htmlContent" name="htmlContent" required
+              placeholder="Enter the HTML content for your post..."></textarea>
+            <small>Use HTML tags to format your content (e.g., &lt;h2&gt;, &lt;p&gt;, &lt;ul&gt;)</small>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">Create Post</button>
+            <a href="/blog" class="btn-secondary">Cancel</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    .site-header {
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      color: white;
+      text-align: center;
+      padding: 5rem 0;
+    }
+
+    .site-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .site-subtitle {
+      font-size: 1.2rem;
+    }
+
+    /* Main Content */
+    .main-content {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Form Styles */
+    .create-post-container h1 {
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .create-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group label {
+      font-weight: bold;
+      font-size: 0.9rem;
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      width: 100%;
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    small {
+      font-size: 0.8rem;
+      color: #777;
+      margin-top: 3px;
+    }
+
+    /* Buttons */
+    .form-actions {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .btn-primary {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      font-size: 0.9rem;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #388E3C;
+    }
+
+    .btn-secondary {
+      background-color: #f44336;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      font-size: 0.9rem;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-secondary:hover {
+      background-color: #e53935;
+    }
+  </style>
+
+  <%- include("partials/footer.ejs") %>
